@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <h1>登入/註冊頁面</h1>
+            <h1>登入/註冊</h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -22,10 +22,6 @@
                         <a class="nav-link active" aria-current="page" href="/api">商品總覽</a>
                     </li>
                 </ul>
-                <form class="d-flex" action="/search" method="get">
-                    <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword">
-                    <button class="btn btn-outline-success  btn-sm" type="submit">搜尋產品</button>
-                </form>
             </div>
         </div>
     </nav>

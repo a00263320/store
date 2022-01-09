@@ -29,14 +29,16 @@
                         <a class="nav-link active" href="/api-user/create">新增商品</a>
                     </li>
 
+                    <form class="d-flex" action="/api-user/search" method="get">
+                        <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword" style="height: 30px">
+                        <button class="btn btn-outline-success  btn-sm" type="submit">搜尋</button>
+                    </form>
+                </ul>
+                <ul class="navbar-nav me-6 mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="/api">登出</a>
                     </li>
                 </ul>
-                <form class="d-flex" action="/api-user/search" method="get">
-                    <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword">
-                    <button class="btn btn-outline-success  btn-sm" type="submit">搜尋產品</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -104,10 +106,10 @@
                             @method('delete')
                             <button type="submit" style="width:130px; height:25px;">刪除</button>
                         </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
 

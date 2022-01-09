@@ -23,14 +23,16 @@
                             </h1>
                         </a>
                     </li>
+                    <form class="d-flex" action="/search" method="get">
+                        <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword">
+                        <button class="btn btn-outline-success  btn-sm" type="submit">搜尋</button>
+                    </form>
+                </ul>
+                <ul class="navbar-nav me-6 mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="/my-account">業者登入</a>
                     </li>
                 </ul>
-                <form class="d-flex" action="/search" method="get">
-                    <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword">
-                    <button class="btn btn-outline-success  btn-sm" type="submit">搜尋產品</button>
-                </form>
             </div>
         </div>
     </nav>

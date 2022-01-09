@@ -26,19 +26,20 @@
                         </a>
                     </li>
 
-
                     <li class="nav-item">
-                        <a class="nav-link active" href="/api-user/create">新增商品</a>
+                        <a class="nav-link active" aria-current="page" href="/api-user/create">新增商品</a>
                     </li>
 
+                    <form class="d-flex" action="/api-user/search" method="get">
+                        <input class="form-control me-2" style="height: 50px" type="Search" placeholder="關鍵字" name="keyword">
+                        <button class="btn btn-outline-success  btn-sm" style=" height: 50px" type="submit">搜尋</button>
+                    </form>
+                </ul>
+                <ul class="navbar-nav me-6 mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="/api">登出</a>
                     </li>
                 </ul>
-                <form class="d-flex" action="/api-user/search" method="get">
-                    <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword">
-                    <button class="btn btn-outline-success  btn-sm" type="submit">搜尋產品</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -47,7 +48,7 @@
         <div class="row py-5">
             @foreach ($store as $storelist)
                 <div class="col-3 py-3">
-                    <div class="card" style="width: 18rem; height: 35rem">
+                    <div class="card" style="width: 18rem; height: 40rem">
                         <img src="{{ $storelist['photo'] }}" style="width: auto; height: 200px" class="card-img-top"
                             alt="...">
                         <div class="card-body" style="width: auto; height: 345px">
@@ -61,7 +62,9 @@
                             <form action="/api-user/{{ $storelist['id'] }}" method="post">
                                 @csrf
                                 @method('delete')
-                                <button type="submit" class="btn btn-danger" style="width:120px; height:25px;">刪除</button>
+                                <button type="submit" class="btn btn-danger" style="width:122px">
+                                    刪除
+                                </button>
                                 {{-- style->改變外觀 --}}
                             </form>
                         </div>
