@@ -25,10 +25,15 @@
                             </h1>
                         </a>
                     </li>
-                    <form class="d-flex" action="/search" method="get">
-                        <input class="form-control me-1" style=" height: 50px" type="Search" placeholder="關鍵字" name="keyword">
-                        <button class="btn btn-outline-success  btn-sm" style=" height: 50px"type="submit">搜尋</button>
-                    </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="d-flex" action="/search" method="get">
+                                <input class="form-control me-1" style=" height: 50px" type="Search" placeholder="關鍵字"
+                                    name="keyword">
+                                <button class="btn btn-outline-success  btn-sm" style=" height: 50px"
+                                    type="submit">搜尋</button>
+                            </form>
+                    </div>
+
                 </ul>
                 <ul class="navbar-nav me-6 mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -40,11 +45,11 @@
     </nav>
 
     <div class="container">
-        <div class="row py-5">
+        <div class="row py-3">
             @foreach ($store as $storelist)
                 <div class="col-3 py-3">
-                    <div class="card" style="width: 18rem; height: 38rem">
-                        <img src="{{ $storelist['photo'] }}" style="width: auto; height: 200px" class="card-img-top"
+                    <div class="card" style="width: 18rem; height: 43rem">
+                        <img src="{{ $storelist['photo'] }}" style="width: auto; height: 250px" class="card-img-top"
                             alt="...">
                         <div class="card-body" style="width: auto; height: 345px">
                             <h5 class="card-title" color="red">{{ $storelist['name'] }}</h5>

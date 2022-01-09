@@ -24,15 +24,20 @@
                         </a>
                     </li>
 
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/my-account-user/create">新增商品</a>
+                        </li>
+                    </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/my-account-user/create">新增商品</a>
-                    </li>
-
-                    <form class="d-flex" action="/my-account-user/search" method="get">
-                        <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword" style="height: 50px">
-                        <button class="btn btn-outline-success  btn-sm" style=" height: 50px" type="submit">搜尋</button>
-                    </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="d-flex" action="/my-account-user/search" method="get">
+                            <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword"
+                                style="height: 50px">
+                            <button class="btn btn-outline-success  btn-sm" style=" height: 50px"
+                                type="submit">搜尋</button>
+                        </form>
+                    </div>
                 </ul>
                 <ul class="navbar-nav me-6 mb-2 mb-lg-0">
                     <li class="nav-item">
