@@ -3,6 +3,7 @@
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,8 @@ Route::get('/search', [ApiController::class, 'index']);
 //登入/登出
 Route::get('/my-account', [LoginController::class, 'login']);
 Route::post('my-account-api', [LoginController::class, 'loginapi']);
+Route::get('my-account-loginout', [LoginController::class, 'loginout']);
+
 //註冊API
 Route::post('/my-account-sign-api', [LoginController::class, 'signapi']);
 

@@ -37,7 +37,7 @@
                 </ul>
                 <ul class="navbar-nav me-6 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/api">登出</a>
+                        <a class="nav-link" href="/my-account-loginout">登出</a>
                     </li>
                 </ul>
             </div>

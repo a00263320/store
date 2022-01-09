@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登入失敗</title>
-</head>
-<body>
+    <title>業主已登出</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <h1>登入失敗</h1>
+            <h1>業主已登出</h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -36,16 +36,13 @@
         <div class="row py-5">
             <div class="card">
                 <div class="card-header">
-                    帳號密碼錯誤
+                    帳戶已登出
                 </div>
                 <div class="card-body">
-                    <h3 class="card-title">您所輸入的帳號密碼錯誤</h3>
-                    <p class="card-text">您所輸入的帳號密碼錯誤，如要重新登入請確認您的帳號密碼，再點選重新登入，已便重新登入。</p>
-                    <p class="card-text">如您是一般用戶要觀看、查詢產品，請點選下方按鈕至商店總覽觀看商品。</p>
-                    <form>
-                        <a href="/api" class="btn btn-primary">回到商品總覽首面</a>
-                        <a href="/my-account" class="btn btn-primary">重新返回登入頁面</a>
-                    </form>
+                    <h5 class="card-title">業者使用者已登出</h5>
+                    <p class="card-text">如要觀看、查詢產品，請點選下方按鈕至商店總覽觀看商品。</p>
+                    <p class="card-text">如業主要編輯產品資訊，請點選右上方按鈕登入，已便編輯。</p>
+                    <a href="/api" class="btn btn-primary">回到商品總覽首面</a>
                 </div>
             </div>
         </div>

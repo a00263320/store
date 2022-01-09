@@ -10,12 +10,13 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+    //登入
     function login(Request $request)
     {
 
         return view('Login.Login');
     }
-
+    //登入API
     function loginapi(Request $request)
     {
         $show = store::all();
@@ -28,6 +29,15 @@ class LoginController extends Controller
         return view('Login.LoginFalse');
     }
 
+    //登出
+    function loginout(){
+        Auth::logout();
+        return view('Login.Loginout');
+    }
+
+
+
+    //註冊
     function sign(){
         return view('Login.Sign');
     }
