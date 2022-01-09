@@ -32,22 +32,28 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row py-5">
-            <div class="card">
-                <div class="card-header">
-                    帳戶已登出
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">業者使用者已登出</h5>
-                    <p class="card-text">如要觀看、查詢產品，請點選下方按鈕至商店總覽觀看商品。</p>
-                    <p class="card-text">如業主要編輯產品資訊，請點選右上方按鈕登入，已便編輯。</p>
-                    <a href="/api" class="btn btn-primary">回到商品總覽首面</a>
+
+    <div class="container-fluid my-4">
+        <div class="row py-5 ">
+            <div class="col">
+                <div class="card mx-auto" style="width: 750px">
+                    <h3>
+                        <div class="card-header">
+                            帳戶已登出
+                        </div>
+                    </h3>
+                    <div class="card-body">
+                        <p class="card-text">如要觀看、查詢產品，請點選下方按鈕至商店總覽觀看商品。</p>
+                        <p class="card-text">如業主要編輯產品資訊，請點選右上方按鈕登入，已便編輯。</p>
+                        <form>
+                            <a href="/api" class="btn btn-primary">商品總覽首頁</a>
+                            <a href="/my-account" class="btn btn-primary">重新登入</a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

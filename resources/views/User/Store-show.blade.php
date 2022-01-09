@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/api-user">
+                        <a class="nav-link active" aria-current="page" href="/my-account-user">
                             <h1>
                                 商品總覽
                             </h1>
@@ -26,12 +26,12 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="/api-user/create">新增商品</a>
+                        <a class="nav-link active" href="/my-account-user/create">新增商品</a>
                     </li>
 
-                    <form class="d-flex" action="/api-user/search" method="get">
-                        <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword" style="height: 30px">
-                        <button class="btn btn-outline-success  btn-sm" type="submit">搜尋</button>
+                    <form class="d-flex" action="/my-account-user/search" method="get">
+                        <input class="form-control me-2" type="Search" placeholder="關鍵字" name="keyword" style="height: 50px">
+                        <button class="btn btn-outline-success  btn-sm" style=" height: 50px" type="submit">搜尋</button>
                     </form>
                 </ul>
                 <ul class="navbar-nav me-6 mb-2 mb-lg-0">
@@ -45,7 +45,7 @@
 
     <div class="container">
         <div class="row py-5">
-            <div class="col-4">
+            <div class="col-6">
                 <div>
                     <img src="{{ $store['photo'] }}" style="width: auto; height: auto" alt="...">
                 </div>
@@ -97,15 +97,14 @@
                         <span style="font-size: 115%">操&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作:</span>
                     </div>
                     <div class="col">
-                        <form action="/api-user/{{ $store['id'] }}/edit" method="get">
-                            <button type="submit" style="width:130px; height:80px;">編輯產品所有資訊</button>
-                        </form>
+                        <a href="/my-account-user/{{ $store['id'] }}/edit" class="btn btn-info">編輯產品所有資訊</a>
 
-                        <form action="/api-user/{{ $store['id'] }}" method="post">
+                        <form action="/my-account-user/{{ $store['id'] }}" method="post">
                             @csrf
                             @method('delete')
-                            <button type="submit" style="width:130px; height:25px;">刪除</button>
+                            <button class="btn btn-danger" type="submit" style="width:156px">刪除</button>
                         </form>
+
                     </div>
                 </div>
             </div>

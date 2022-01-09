@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/api-user">
+                        <a class="nav-link active" aria-current="page" href="/my-account-user">
                             <h1>
                                 商品總覽
                             </h1>
@@ -27,10 +27,10 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/api-user/create">新增商品</a>
+                        <a class="nav-link active" aria-current="page" href="/my-account-user/create">新增商品</a>
                     </li>
 
-                    <form class="d-flex" action="/api-user/search" method="get">
+                    <form class="d-flex" action="/my-account-user/search" method="get">
                         <input class="form-control me-2" style="height: 50px" type="Search" placeholder="關鍵字" name="keyword">
                         <button class="btn btn-outline-success  btn-sm" style=" height: 50px" type="submit">搜尋</button>
                     </form>
@@ -58,8 +58,8 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="/api-user/{{ $storelist['id'] }}" class="btn btn-primary">檢視產品資訊</a>
-                            <form action="/api-user/{{ $storelist['id'] }}" method="post">
+                            <a href="/my-account-user/{{ $storelist['id'] }}" class="btn btn-primary">檢視產品資訊</a>
+                            <form action="/my-account-user/{{ $storelist['id'] }}" method="post">
                                 @csrf
                                 @method('delete')
                                 <button type="submit" class="btn btn-danger" style="width:122px">

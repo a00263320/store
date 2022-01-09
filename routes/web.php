@@ -26,12 +26,12 @@ Route::get('/search', [ApiController::class, 'index']);
 //登入/登出
 Route::get('/my-account', [LoginController::class, 'login']);
 Route::post('my-account-api', [LoginController::class, 'loginapi']);
-Route::get('my-account-loginout', [LoginController::class, 'loginout']);
+Route::get('/my-account-loginout', [LoginController::class, 'loginout']);
 
 //註冊API
 Route::post('/my-account-sign-api', [LoginController::class, 'signapi']);
 
 Route::group(['middleware' => 'auth'], function (){
     //使用者後臺頁面
-    Route::resource('api-user', UserController::class);
+    Route::resource('my-account-user', UserController::class);
 });
