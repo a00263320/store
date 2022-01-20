@@ -30,7 +30,9 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <li class="nav-item text-dark">
-                            <a class="nav-link active" href="/my-account-user/create">新增商品</a>
+                            <a class="nav-link active" href="/my-account-user/create">
+                                <h4>新增商品</h4>
+                            </a>
                         </li>
                     </div>
 

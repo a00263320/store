@@ -47,7 +47,8 @@ class LoginController extends Controller
         User::create([
             'name' => $request['SignUser'],
             //bcrypt->使密碼到資料庫的時候顯示亂碼
-            'password' => bcrypt($request['SignPassword'])
+            'password' => bcrypt($request['SignPassword']),
+            'email' => $request['SignEmail']
         ]);
         return view('Login.Signsuc');
     }

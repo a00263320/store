@@ -32,7 +32,9 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item text-dark">
-                                <a class="nav-link active" aria-current="page" href="/my-account-user/create">新增商品</a>
+                                <a class="nav-link active" aria-current="page" href="/my-account-user/create">
+                                    <h4>新增商品</h4>
+                                </a>
                             </li>
                         </ul>
                     </div>

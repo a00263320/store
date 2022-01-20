@@ -14,15 +14,17 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
         <div class="container-fluid">
-            <h1 class="text-dark">
-                請輸入產品資訊
-            </h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/my-account-user">商品總覽</a>
+                        <a class="nav-link active" aria-current="page" href="/my-account-user">
+                            <h1>商品總覽</h1>
+                        </a>
                     </li>
+                    <h4 class="collapse navbar-collapse">
+                        請輸入產品資訊
+                    </h4>
                 </ul>
                 <ul class="navbar-nav me-6 mb-2 mb-lg-0">
                     <li class="nav-item text-dark">

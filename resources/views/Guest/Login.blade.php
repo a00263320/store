@@ -18,22 +18,23 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
         <div class="container-fluid">
-            <h1 class="text-dark">
-                登入/註冊
-            </h1>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item text-dark">
-                        <a class="nav-link active" aria-current="page" href="/api">商品總覽</a>
+                        <a class="nav-link active" aria-current="page" href="/api">
+                            <h1>商品總覽</h1>
+                        </a>
                     </li>
+                    <h4 class="collapse navbar-collapse">
+                        登入/註冊
+                    </h4>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="row py-3">
             <div class="col-6">
                 登入
                 <form action="/guest-login-api" method="post">
