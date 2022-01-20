@@ -12,9 +12,9 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
         <div class="container-fluid">
-            <h1>
+            <h1 class="text-dark">
                 請輸入產品資訊
             </h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,7 +25,7 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav me-6 mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item text-dark">
                         <a class="nav-link" href="/my-account-loginout">登出</a>
                     </li>
                 </ul>
