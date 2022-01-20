@@ -17,6 +17,8 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('password');
+            $table->bigInteger('role_id');    //role資料庫繼承給user資料庫使用ID  ID的屬性為integer
+            $table->bigInteger('level_id');   //level資料庫繼承給user資料庫使用ID  ID的屬性為integer
             $table->rememberToken();
             $table->timestamps();
         });
